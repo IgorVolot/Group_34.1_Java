@@ -15,6 +15,8 @@ public class FigureAppl {
         shapes[3] = new Square("square",10);
         System.out.println(shapes[0]);
         System.out.println(shapes[1]);
+        System.out.println(shapes[2]);
+        System.out.println(shapes[3]);
         System.out.println();
 
         System.out.println("Total area of shapes is " + totalArea(shapes));
