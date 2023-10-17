@@ -10,13 +10,11 @@ public class Square extends Shape {
 
     @Override
     public double calcArea() {
-        area = side * side;
-        return area;
+        return area = side * side;
     }
 
     @Override
     public double calcPerimeter() {
-        perimeter = side * 4;
-        return perimeter;
+        return perimeter = side * 4;
     }
 }

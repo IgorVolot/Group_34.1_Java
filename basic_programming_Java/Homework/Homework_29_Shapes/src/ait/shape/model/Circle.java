@@ -10,13 +10,11 @@ public class Circle extends Shape {
 
     @Override
     public double calcArea() {
-        area = Math.PI * side * side;
-        return area;
+        return area = Math.PI * side * side;
     }
 
     @Override
     public double calcPerimeter() {
-        perimeter = 2 * Math.PI * side;
-        return perimeter;
+        return perimeter = 2 * Math.PI * side;
     }
 }

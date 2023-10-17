@@ -10,13 +10,11 @@ public class Triangle extends Shape {
 
     @Override
     public double calcArea() {
-        area = (Math.sqrt(3) * side * side) / 4;
-        return area;
+        return area = Math.sqrt(3) * side * side / 4;
     }
 
     @Override
     public double calcPerimeter() {
-        perimeter = side * 3;
-        return perimeter;
+        return perimeter = side * 3;
     }
 }
