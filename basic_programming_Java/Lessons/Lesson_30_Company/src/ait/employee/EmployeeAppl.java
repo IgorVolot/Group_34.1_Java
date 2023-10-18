@@ -1,5 +1,6 @@
 package ait.employee;
 
+import ait.employee.dao.Company;
 import ait.employee.model.Employee;
 import ait.employee.model.Manager;
 import ait.employee.model.SalesManager;
@@ -19,6 +20,7 @@ public class EmployeeAppl {
         System.out.println("Total salary = " + total);
 //        total = totalSales(firm);
         System.out.println("Total sales = " + totalSales(firm));
+
     }
 
     public static void printArray(Object[] arr) {
