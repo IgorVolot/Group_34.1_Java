@@ -50,7 +50,7 @@ class CompanyTest {
     @Test
     void findEmployee() {
         assertEquals(firm[1], company.findEmployee(2000));
-        assertNull( company.findEmployee(5000));
+        assertNull(company.findEmployee(5000));
     }
 
     @Test
@@ -76,5 +76,27 @@ class CompanyTest {
     @Test
     void printEmployees() {
         company.printEmployees();
+    }
+
+    @Test
+    void findEmployeesHoursGreaterThan() {
+        Employee[] actual = company.findEmployeesHoursGreaterThan(100);
+        Employee[] expected = {firm[0], firm[1], firm[2]};
+        assertArrayEquals(expected,actual);
+    }
+
+    @Test
+    void findEmployeesSalaryRange() {
+        Employee[] actual = company.findEmployeesSalaryRange(2000, 2400);
+        Employee[] expected = {firm[2], firm[3]};
+        assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    void testIncrement() {
+        int a = 10;
+        int b = a++ + ++a;
+        assertEquals(12, a);
+        assertEquals(22, b);
     }
 }
