@@ -94,7 +94,7 @@ public class CompanyImpl implements Company {
             }
         }
         Employee[] res = new Employee[count];
-        for (int i = 0, j = 0; i < size; i++) {
+        for (int i = 0, j = 0; i < size; i++) {   // в этом методе БАГ. Если оставить res.length , то тесты упадут при других исходных данных.
             if (employees[i].getHours() > hours) {
                 res[j++] = employees[i];
 //                j++;
