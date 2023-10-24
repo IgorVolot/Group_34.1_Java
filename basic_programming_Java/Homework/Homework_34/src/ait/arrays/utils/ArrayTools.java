@@ -1,6 +1,7 @@
 package ait.arrays.utils;
 
 import java.util.Comparator;
+import java.util.HashSet;
 import java.util.function.Predicate;
 
 public class ArrayTools {
@@ -40,6 +41,7 @@ public class ArrayTools {
             }
         }
     }
+
     public static <T> void bubbleSort(T[] arr, Comparator<T> comparator) {
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = 0; j < arr.length - 1; j++) {
@@ -52,4 +54,35 @@ public class ArrayTools {
         }
     }
 
+    public static void oddEvenComparator(Integer[] arr, Comparator<Integer> comparator) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = 0; j < arr.length - 1; j++) {
+                if (comparator.compare(arr[j] % 2, arr[j + 1] % 2) > 0) {
+                    Integer t = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = t;
+                }
+            }
+        }
+    }
+
+    public static int oddEvenComparator1(Integer[] arr, Comparator<Integer> comparator) {
+        for (int i = 0; i < arr.length; i++) {
+            int n1 = arr[i];
+            int n2 = arr[i +1];
+            if (n1 % 2 == 0 && n2 % 2 !=0){
+                return -1;
+            }
+            if (n1 % 2 !=0 && n2 % 2 == 0){
+                return 1;
+            }
+            if (n1 % 2 == 0 && n2 % 2 ==0){
+                return n1 - n2;
+            }
+            if (n1 % 2 != 0 && n2 % 2 !=0){
+                return n2 - n1;
+            }
+        }
+        return 0;
+    }
 }
