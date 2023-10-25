@@ -4,6 +4,8 @@ import ait.arrays.utils.ArrayTools;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.function.Predicate;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -32,7 +34,7 @@ class ArrayToolsTest {
         System.out.println("index = " + index);
         index = ArrayTools.search(arrStr, "six");
         System.out.println("index = " + index);
-        index = ArrayTools.search(arrNum, "4");
+//        index = ArrayTools.<Integer>search(arrNum, "4");
         index = ArrayTools.search(arrStr, 4);
         System.out.println("index = " + index);
         index = ArrayTools.search(arrNum, 6);
@@ -65,5 +67,17 @@ class ArrayToolsTest {
         ArrayTools.printArray(arrNum);
         ArrayTools.bubbleSort(arrStr, (s1, s2) -> s1.length() - s2.length());
         ArrayTools.printArray(arrStr);
+    }
+    @Test
+    void testBinarySearch(){
+        System.out.println("========== testBinarySearch ==========");
+        ArrayTools.binarySearch(arrNum, 4);
+        ArrayTools.binarySearch(arrStr, "three");
+    }
+    @Test
+    void testBinarySearch2(){
+        System.out.println("========== testBinarySearch2 ==========");
+        ArrayTools.binarySearch2(arrNum, (n1, n2) -> n1 - n2);
+        ArrayTools.binarySearch2(arrStr, (n1, n2) -> n1.compareTo(n2));
     }
 }

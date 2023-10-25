@@ -4,6 +4,8 @@ import java.util.Comparator;
 import java.util.function.Predicate;
 
 public class ArrayTools {
+    private static int l;
+
     public static void printArray(Object[] arr) {
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
@@ -40,6 +42,7 @@ public class ArrayTools {
             }
         }
     }
+
     public static <T> void bubbleSort(T[] arr, Comparator<T> comparator) {
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = 0; j < arr.length - 1; j++) {
@@ -52,4 +55,37 @@ public class ArrayTools {
         }
     }
 
+    public static <T extends Comparable<T>> int binarySearch(T[] arr, Comparable<T> value) {
+        int l = 0;
+        int r = arr.length - 1;
+        while (l <= r) {
+            int mid = (l + r) / 2;
+            if (arr[mid].compareTo((T) value) == 0) {
+                return mid;
+            }
+            if (arr[mid].compareTo((T) value) < 0) {
+                l = mid + 1;
+            } else {
+                r = mid - 1;
+            }
+        }
+        return -l - 1;
+    }
+
+    public static <T> int binarySearch2(T[] arr, Comparator<T> comparator) {
+        int l = 0;
+        int r = arr.length - 1;
+        while (l <= r) {
+            int mid = (l + r) / 2;
+            if (comparator.compare(arr[mid], arr[mid + 1]) == 0) {
+                return mid;
+            }
+            if (comparator.compare(arr[mid], arr[mid + 1]) < 0) {
+                l = mid + 1;
+            } else{
+                r = mid - 1;
+            }
+        }
+        return -l - 1;
+    }
 }
