@@ -53,31 +53,44 @@ class ArrayToolsTest {
     }
 
     @Test
-    void testBubbleSort(){
+    void testBubbleSort() {
         System.out.println("========== testBubbleSort ==========");
         ArrayTools.bubbleSort(arrNum);
         ArrayTools.printArray(arrNum);
         ArrayTools.bubbleSort(arrStr);
         ArrayTools.printArray(arrStr);
     }
+
     @Test
-    void testBubbleSortComparator(){
+    void testBubbleSortComparator() {
         System.out.println("========== testBubbleSortComparator ==========");
         ArrayTools.bubbleSort(arrNum, (n1, n2) -> n2 - n1);
         ArrayTools.printArray(arrNum);
         ArrayTools.bubbleSort(arrStr, (s1, s2) -> s1.length() - s2.length());
         ArrayTools.printArray(arrStr);
     }
+
     @Test
-    void testBinarySearch(){
+    void testBinarySearch() {
         System.out.println("========== testBinarySearch ==========");
         ArrayTools.binarySearch(arrNum, 4);
         ArrayTools.binarySearch(arrStr, "three");
     }
+
     @Test
-    void testBinarySearch2(){
+    void testBinarySearch2() {
         System.out.println("========== testBinarySearch2 ==========");
         ArrayTools.binarySearch2(arrNum, (n1, n2) -> n1 - n2);
         ArrayTools.binarySearch2(arrStr, (n1, n2) -> n1.compareTo(n2));
+
+    }
+
+    @Test
+    void testBinarySearch3() {
+        System.out.println("========== testBinarySearch3 ==========");
+        int index = ArrayTools.binarySearch3(arrNum, 7, ((n1, n2) -> n1 - n2));
+        System.out.println("index = " + index);
+        index = ArrayTools.binarySearch3(arrStr, "three", ((n1, n2) -> n1.compareTo(n2)));
+        System.out.println("index = " + index);
     }
 }
