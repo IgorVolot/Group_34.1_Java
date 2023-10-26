@@ -5,7 +5,6 @@ import ait.cars.dao.GarageImpl;
 import ait.cars.model.Car;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class GarageTest {
@@ -31,7 +30,7 @@ class GarageTest {
     void addCar() {
         assertFalse(garage.addCar(null));
         assertFalse(garage.addCar(car[2]));
-        Car cars = new Car("BB001", "Company2", "Model2", 6., "black");
+        Car cars = new Car("BB001", "Company3", "Model2", 6., "black");
         assertTrue(garage.addCar(cars));
         assertEquals(7, garage.quantity());
         cars = new Car("BB002", "Company2", "Model2", 6., "black");
@@ -48,6 +47,7 @@ class GarageTest {
 
     @Test
     void findCarByRegNumber() {
+        Car cars = garage.findCarByRegNumber("AA0005");
         assertEquals(car[4], garage.findCarByRegNumber("AA0005"));
         assertNull(garage.findCarByRegNumber("PTNPNX"));
     }

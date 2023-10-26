@@ -28,10 +28,11 @@ public class GarageImpl implements Garage {
     @Override
     public Car removeCar(String regNumber) {
         for (int i = 0; i < size; i++) {
-            if (cars[i].getRegNumber().equals(regNumber)){
+            if (cars[i].getRegNumber().equals(regNumber)) {
                 Car removedCar = cars[i];
-                cars[i] = cars[--size];
-                cars[size] = null;
+//                cars[i] = cars[--size];
+                System.arraycopy(cars, i + 1, cars, i, size - i - 1);
+                cars[--size] = null;
                 return removedCar;
             }
         }
@@ -41,7 +42,7 @@ public class GarageImpl implements Garage {
     @Override
     public Car findCarByRegNumber(String regNumber) {
         for (int i = 0; i < size; i++) {
-            if (cars[i].getRegNumber().equals(regNumber)){
+            if (cars[i].getRegNumber().equals(regNumber)) {
                 return cars[i];
             }
         }
@@ -67,16 +68,17 @@ public class GarageImpl implements Garage {
     public Car[] findCarsByColor(String color) {
         return findCarByPredicate(c -> c.getColor().equals(color));
     }
-    private Car[] findCarByPredicate(Predicate<Car> predicate){
+
+    private Car[] findCarByPredicate(Predicate<Car> predicate) {
         int count = 0;
         for (int i = 0; i < size; i++) {
-            if (predicate.test(cars[i])){
+            if (predicate.test(cars[i])) {
                 count++;
             }
         }
         Car[] result = new Car[count];
         for (int i = 0, j = 0; j < result.length; i++) {
-            if (predicate.test(cars[i])){
+            if (predicate.test(cars[i])) {
                 result[j++] = cars[i];
             }
         }
