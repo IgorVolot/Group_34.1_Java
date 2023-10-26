@@ -3,6 +3,7 @@ package ait.employee.dao;
 import ait.employee.model.Employee;
 import ait.employee.model.SalesManager;
 
+import java.util.Arrays;
 import java.util.function.Predicate;
 
 public class CompanyImpl implements Company {
@@ -94,17 +95,29 @@ public class CompanyImpl implements Company {
         return findEmployeesByPredicate(e -> e.calcSalary() >= minSalary && e.calcSalary() < maxSalary);
     }
 
+    //    private Employee[] findEmployeesByPredicate(Predicate<Employee> predicate) {
+//        int count = 0;
+//        for (int i = 0; i < size; i++) {
+//            if (predicate.test(employees[i])) {
+//                count++;
+//            }
+//        }
+//        Employee[] res = new Employee[count];
+//        for (int i = 0, j = 0; j < res.length; i++) {
+//            if (predicate.test(employees[i])) {
+//                res[j++] = employees[i];
+//            }
+//        }
+//        return res;
+//    }
     private Employee[] findEmployeesByPredicate(Predicate<Employee> predicate) {
         int count = 0;
+        Employee[] res = new Employee[count];
         for (int i = 0; i < size; i++) {
             if (predicate.test(employees[i])) {
-                count++;
-            }
-        }
-        Employee[] res = new Employee[count];
-        for (int i = 0, j = 0; j < res.length; i++) {
-            if (predicate.test(employees[i])) {
-                res[j++] = employees[i];
+                Employee[] resCopy = Arrays.copyOf(res, res.length + 1);
+                System.arraycopy(employees, i, resCopy, count++, 1);
+                res = resCopy;
             }
         }
         return res;
