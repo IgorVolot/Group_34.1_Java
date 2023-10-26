@@ -2,6 +2,7 @@ package ait.cars.dao;
 
 import ait.cars.model.Car;
 
+import java.util.Arrays;
 import java.util.function.Predicate;
 
 public class GarageImpl implements Garage {
@@ -70,16 +71,13 @@ public class GarageImpl implements Garage {
     }
 
     private Car[] findCarByPredicate(Predicate<Car> predicate) {
-        int count = 0;
+        int index0 = 0;
+        Car[] result = new Car[index0];
         for (int i = 0; i < size; i++) {
             if (predicate.test(cars[i])) {
-                count++;
-            }
-        }
-        Car[] result = new Car[count];
-        for (int i = 0, j = 0; j < result.length; i++) {
-            if (predicate.test(cars[i])) {
-                result[j++] = cars[i];
+                Car[] resultCopy = Arrays.copyOf(result, result.length + 1);
+                System.arraycopy(cars, i, resultCopy, index0++, 1);
+                result = resultCopy;
             }
         }
         return result;
