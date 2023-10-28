@@ -95,7 +95,7 @@ public class CompanyImpl implements Company {
         return findEmployeesByPredicate(e -> e.calcSalary() >= minSalary && e.calcSalary() < maxSalary);
     }
 
-    //    private Employee[] findEmployeesByPredicate(Predicate<Employee> predicate) {
+//    private Employee[] findEmployeesByPredicate(Predicate<Employee> predicate) {
 //        int count = 0;
 //        for (int i = 0; i < size; i++) {
 //            if (predicate.test(employees[i])) {
@@ -110,16 +110,19 @@ public class CompanyImpl implements Company {
 //        }
 //        return res;
 //    }
+
+
     private Employee[] findEmployeesByPredicate(Predicate<Employee> predicate) {
         int count = 0;
-        Employee[] res = new Employee[count];
+        Employee[] res = new Employee[size];
         for (int i = 0; i < size; i++) {
             if (predicate.test(employees[i])) {
-                Employee[] resCopy = Arrays.copyOf(res, res.length + 1);
-                System.arraycopy(employees, i, resCopy, count++, 1);
-                res = resCopy;
+                System.arraycopy(employees, i, res, count++, 1);
             }
         }
-        return res;
+        Employee[] resCopy = Arrays.copyOf(res, count);
+        return resCopy;
     }
 }
+
+
