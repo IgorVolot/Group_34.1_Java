@@ -71,15 +71,14 @@ public class GarageImpl implements Garage {
     }
 
     private Car[] findCarByPredicate(Predicate<Car> predicate) {
-        int index0 = 0;
-        Car[] result = new Car[index0];
+        int count = 0;
+        Car[] res = new Car[size];
         for (int i = 0; i < size; i++) {
             if (predicate.test(cars[i])) {
-                Car[] resultCopy = Arrays.copyOf(result, result.length + 1);
-                System.arraycopy(cars, i, resultCopy, index0++, 1);
-                result = resultCopy;
+                System.arraycopy(cars, i, res, count++, 1);
             }
         }
-        return result;
+        Car[] resCopy = Arrays.copyOf(res, count);
+        return resCopy;
     }
 }
