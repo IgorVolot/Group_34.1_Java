@@ -13,7 +13,10 @@ public class CompanyImpl implements Company {
 
     @Override
     public boolean addEmployee(Employee employee) {
-        if (employee == null || size == employees.length || findEmployee(employee.getId()) != null) {
+        if (employee == null){
+            throw new RuntimeException("Employee cannot be null");
+        }
+        if (size == employees.length || findEmployee(employee.getId()) != null) {
             return false;
         }
 //        employees[size] = employee;
@@ -94,7 +97,7 @@ public class CompanyImpl implements Company {
             }
         }
         Employee[] res = new Employee[count];
-        for (int i = 0, j = 0; i < size; i++) {   // в этом методе БАГ. Если оставить res.length , то тесты упадут при других исходных данных.
+        for (int i = 0, j = 0; i < size; i++) {
             if (employees[i].getHours() > hours) {
                 res[j++] = employees[i];
 //                j++;

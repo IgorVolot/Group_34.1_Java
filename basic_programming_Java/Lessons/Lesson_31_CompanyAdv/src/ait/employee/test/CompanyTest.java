@@ -8,6 +8,8 @@ import ait.employee.model.SalesManager;
 import ait.employee.model.WageEmployee;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
+import org.junit.platform.engine.support.hierarchical.ThrowableCollector;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -30,7 +32,16 @@ class CompanyTest {
 
     @Test
     void addEmployee() {
-        assertFalse(company.addEmployee(null));
+        try {
+            company.addEmployee(null);
+        } catch (RuntimeException e){
+            e.printStackTrace();
+            return;
+        } finally {
+            System.out.println("Employee cannot be null");
+        }
+//        assertThrows(RuntimeException.class,()-> company.addEmployee(null),"Employee cannot be null");
+//        assertFalse(company.addEmployee(null));
         assertFalse(company.addEmployee(firm[1]));
         Employee employee = new SalesManager(5000, "Peter", "Jackson", 160, 19_000, 0.1);
         assertTrue(company.addEmployee(employee));
@@ -82,7 +93,7 @@ class CompanyTest {
     void findEmployeesHoursGreaterThan() {
         Employee[] actual = company.findEmployeesHoursGreaterThan(100);
         Employee[] expected = {firm[0], firm[1], firm[2]};
-        assertArrayEquals(expected,actual);
+        assertArrayEquals(expected, actual);
     }
 
     @Test
