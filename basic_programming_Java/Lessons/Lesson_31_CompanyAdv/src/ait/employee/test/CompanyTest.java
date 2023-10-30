@@ -35,13 +35,9 @@ class CompanyTest {
         try {
             company.addEmployee(null);
         } catch (RuntimeException e){
-            e.printStackTrace();
+            System.out.println(e.toString());
             return;
-        } finally {
-            System.out.println("Employee cannot be null");
         }
-//        assertThrows(RuntimeException.class,()-> company.addEmployee(null),"Employee cannot be null");
-//        assertFalse(company.addEmployee(null));
         assertFalse(company.addEmployee(firm[1]));
         Employee employee = new SalesManager(5000, "Peter", "Jackson", 160, 19_000, 0.1);
         assertTrue(company.addEmployee(employee));
