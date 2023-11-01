@@ -1,5 +1,10 @@
 package ait.computer;
 
+/*
+ * Copyright (c) 2023.
+ * Igor Volotovskyi
+ */
+
 import ait.computer.model.Computer;
 import ait.computer.model.Laptop;
 import ait.computer.model.Smartphone;

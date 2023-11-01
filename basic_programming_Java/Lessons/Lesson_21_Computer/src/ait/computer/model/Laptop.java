@@ -1,5 +1,10 @@
 package ait.computer.model;
 
+/*
+ * Copyright (c) 2023.
+ * Igor Volotovskyi
+ */
+
 public class Laptop extends Computer {
     private double hours;
     private double weight;

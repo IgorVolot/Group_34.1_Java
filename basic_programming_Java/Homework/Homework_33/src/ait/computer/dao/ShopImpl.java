@@ -4,62 +4,75 @@ package ait.computer.dao;
  *  Igor Volotovskyi
  */
 
+import ait.computer.model.Computer;
+import ait.computer.model.Laptop;
+import ait.computer.model.SmartPhone;
+
 public class ShopImpl implements Shop {
-    protected int article;
-    protected String brandName;
-    protected String model;
-    protected double price;
+    private Computer[] computers;
+    private int size;
 
-    public ShopImpl(int article, String brandName, String model, double price) {
-        this.article = article;
-        this.brandName = brandName;
-        this.model = model;
-        this.price = price;
-    }
-
-    public int getArticle() {
-        return article;
-    }
-
-    public String getBrandName() {
-        return brandName;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
+    public ShopImpl(int quantity) {
+        computers = new Computer[quantity];
     }
 
     @Override
-    public boolean equals(Object object) {
-        if (this == object) return true;
-        if (object == null || getClass() != object.getClass()) return false;
-
-        ShopImpl shop = (ShopImpl) object;
-
-        return article == shop.article;
+    public boolean addComputer(Computer computer) {
+        return false;
     }
 
     @Override
-    public int hashCode() {
-        return article;
+    public int quantity() {
+        return size;
     }
 
     @Override
-    public String toString() {
-        final StringBuilder sb = new StringBuilder("Shop{");
-        sb.append("article=").append(article);
-        sb.append(", brandName='").append(brandName).append('\'');
-        sb.append(", model='").append(model).append('\'');
-        sb.append(", price=").append(price);
-        sb.append('}');
-        return sb.toString();
+    public Computer removeComputer(int article) {
+        return null;
+    }
+
+    @Override
+    public Computer findComputer(int article) {
+        return null;
+    }
+
+    @Override
+    public Computer[] findComputerByBrand(String brandName) {
+        return new Computer[0];
+    }
+
+    @Override
+    public Laptop[] findLaptopByModel(String model) {
+        return new Laptop[0];
+    }
+
+    @Override
+    public Laptop[] findLaptopBySsd(int ssd) {
+        return new Laptop[0];
+    }
+
+    @Override
+    public Laptop[] findLaptopByHours(double min, double max) {
+        return null;
+    }
+
+    @Override
+    public SmartPhone[] findSmartPhoneByImei(long imei) {
+        return null;
+    }
+
+    @Override
+    public SmartPhone[] findSmartPhoneByWeight(double min, double max) {
+        return null;
+    }
+
+    @Override
+    public Computer[] findComputerByPrice(double min, double max) {
+        return null;
+    }
+
+    @Override
+    public boolean setPrice(int article, double price) {
+        return false;
     }
 }

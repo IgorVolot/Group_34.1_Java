@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0e9bd71c-7ad6-486b-9556-9fd4dfb16963" name="Changes" comment="Les 27">
+      <change afterPath="$PROJECT_DIR$/../../../.idea/group_34.1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/.idea/Homework.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_18_28.09_Book/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_18_28.09_Book/.idea/Homework_18_28.09_Book.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_18_28.09_Book/Homework_18_28.09_Book.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_24/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_24/.idea/Homework_24.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_24/Homework_24.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_27_WordChangeling/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_27_WordChangeling/.idea/Homework_27_WordChangeling.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_27_WordChangeling/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_27_WordChangeling/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_27_WordChangeling/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_27_WordChangeling/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_27_WordChangeling/Homework_27_WordChangeling.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_28_PasswordValidator/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_28_PasswordValidator/.idea/Homework_28_PasswordValidator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_28_PasswordValidator/Homework_28_PasswordValidator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_29_Shapes/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_29_Shapes/Homework_29_Shapes.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_02_Hello/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_02_Hello/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_02_Hello/Lesson_02_Hello.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_03_Methods/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_03_Methods/Lesson_03_Methods.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_04_MethodsAdv/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_04_MethodsAdv/Lesson_04_MethodsAdv.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_05_VarOperation/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_05_VarOperation/Lesson_05_VarOperation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_06_Choice/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_06_Choice/Lesson_06_Choice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_07_ChoiceAdv/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_07_ChoiceAdv/Lesson_07_ChoiceAdv.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_08_Practice/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_08_Practice/Lesson_08_Practice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_09_WhileLoop/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_09_WhileLoop/Lesson_09_WhileLoop.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_10_LoopAdv/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_10_LoopAdv/Lesson_10_LoopAdv.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_11_Arrays/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_11_Arrays/Lesson_11_Arrays.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_12_ArrayAdv/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_12_ArrayAdv/Lesson_12_ArrayAdv.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_13_Sort/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_13_Sort/Lesson_13_Sort.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_14_Practice/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_14_Practice/Lesson_14_Practice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_15_Practice/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_15_Practice/Lesson_15_Practice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_16_ArrayTools/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_16_ArrayTools/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_16_ArrayTools/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_16_ArrayTools/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_16_ArrayTools/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_17_Encapsulation/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_17_Encapsulation/Lesson_17_Encapsulation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_18_Polymorphism/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_18_Polymorphism/Lesson_18_Polymorphism.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_19_Practice/Lesson_19_Practice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_19_Practice/out/production/Lesson_19_Practice/ait/practice/model/pizza/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_19_Practice/out/production/Lesson_19_Practice/ait/practice/model/pizza/Pizza.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_20_Inheritance/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_20_Inheritance/Lesson_20_Inheritance.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_21_Computer/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_21_Computer/Lesson_21_Computer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_22_OOP/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_22_OOP/Lesson_22_OOP.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_23_Supermarket/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_23_Supermarket/Lesson_23_Supermarket.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_24_WrapperClasses/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_24_WrapperClasses/Lesson_24_WrapperClasses.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_25_String/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_25_String/Lesson_25_String.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/Lesson_26_UserTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/apiguardian-api-1.1.2-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/apiguardian-api-1.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/junit-jupiter-5.8.1-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/junit-jupiter-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/junit-jupiter-api-5.8.1-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/junit-jupiter-api-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/junit-jupiter-engine-5.8.1-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/junit-jupiter-engine-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/junit-jupiter-params-5.8.1-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/junit-jupiter-params-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/junit-platform-commons-1.8.1-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/junit-platform-commons-1.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/junit-platform-engine-1.8.1-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/junit-platform-engine-1.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/opentest4j-1.2.0-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/opentest4j-1.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_27_StringBuilder.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_28_Practice/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_28_Practice/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_28_Practice/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_28_Practice/Lesson_28_Practice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_28_Practice/src/ait/test/WrappersTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_28_Practice/src/ait/wrapper/Wrappers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Homework/Homework_24/src/ait/values/ValuesOfPrimitives.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2WrENpvPkmWzPrbYcd2Q7eALb8j" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/igvol/Documents/IdeaProjects/group_34.1/basic_programming_Java/Lessons/Lesson_27_StringBuilder/src",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0e9bd71c-7ad6-486b-9556-9fd4dfb16963" name="Changes" comment="" />
+      <created>1697482262068</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697482262068</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Les 27">
+      <option name="closed" value="true" />
+      <created>1697482431241</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697482431241</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Les 27" />
+    <option name="LAST_COMMIT_MESSAGE" value="Les 27" />
+  </component>
+</project>

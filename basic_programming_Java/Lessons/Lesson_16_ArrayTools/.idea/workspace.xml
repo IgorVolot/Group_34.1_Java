@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c6d24ea2-fb47-4f7e-aeff-6a644db6cb57" name="Changes" comment="Les 16">
+      <change afterPath="$PROJECT_DIR$/../../../.idea/group_34.1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Consultation/Consultation_17_27.09/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Consultation/Consultation_17_27.09/Consultation_17_27.09.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Consultation/Consultation_18_Arrays/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Consultation/Consultation_18_Arrays/Consultation_18_Arrays.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/.idea/Homework.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_18_28.09_Book/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_18_28.09_Book/.idea/Homework_18_28.09_Book.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_18_28.09_Book/Homework_18_28.09_Book.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_24/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_24/.idea/Homework_24.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_24/Homework_24.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_27_WordChangeling/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_27_WordChangeling/.idea/Homework_27_WordChangeling.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_27_WordChangeling/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_27_WordChangeling/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_27_WordChangeling/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_27_WordChangeling/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_27_WordChangeling/Homework_27_WordChangeling.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_28_PasswordValidator/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_28_PasswordValidator/.idea/Homework_28_PasswordValidator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_28_PasswordValidator/Homework_28_PasswordValidator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_29_Shapes/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_29_Shapes/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_29_Shapes/Homework_29_Shapes.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_32_Cars/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_32_Cars/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_32_Cars/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_32_Cars/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_32_Cars/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_32_Cars/Homework_32_Cars.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_32_Cars/lib/apiguardian-api-1.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_32_Cars/lib/junit-jupiter-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_32_Cars/lib/junit-jupiter-api-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_32_Cars/lib/junit-jupiter-engine-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_32_Cars/lib/junit-jupiter-params-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_32_Cars/lib/junit-platform-commons-1.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_32_Cars/lib/junit-platform-engine-1.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_32_Cars/lib/opentest4j-1.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_33/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_33/Homework_33.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_33/lib/apiguardian-api-1.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_33/lib/junit-jupiter-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_33/lib/junit-jupiter-api-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_33/lib/junit-jupiter-engine-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_33/lib/junit-jupiter-params-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_33/lib/junit-platform-commons-1.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_33/lib/junit-platform-engine-1.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_33/lib/opentest4j-1.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_33/src/ait/book/dao/Library.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_33/src/ait/book/dao/LibraryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_33/src/ait/book/model/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_33/src/ait/book/test/LibraryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_33/src/ait/computer/dao/ShopImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_34/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_34/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_34/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_34/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_34/Homework_34.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_34/lib/apiguardian-api-1.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_34/lib/junit-jupiter-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_34/lib/junit-jupiter-api-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_34/lib/junit-jupiter-engine-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_34/lib/junit-jupiter-params-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_34/lib/junit-platform-commons-1.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_34/lib/junit-platform-engine-1.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/Homework_34/lib/opentest4j-1.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_02_Hello/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_02_Hello/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_02_Hello/Lesson_02_Hello.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_03_Methods/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_03_Methods/Lesson_03_Methods.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_04_MethodsAdv/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_04_MethodsAdv/Lesson_04_MethodsAdv.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_05_VarOperation/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_05_VarOperation/Lesson_05_VarOperation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_06_Choice/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_06_Choice/Lesson_06_Choice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_07_ChoiceAdv/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_07_ChoiceAdv/Lesson_07_ChoiceAdv.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_08_Practice/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_08_Practice/Lesson_08_Practice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_09_WhileLoop/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_09_WhileLoop/Lesson_09_WhileLoop.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_10_LoopAdv/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_10_LoopAdv/Lesson_10_LoopAdv.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_11_Arrays/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_11_Arrays/Lesson_11_Arrays.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_12_ArrayAdv/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_12_ArrayAdv/Lesson_12_ArrayAdv.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_13_Sort/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_13_Sort/Lesson_13_Sort.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_14_Practice/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_14_Practice/Lesson_14_Practice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_15_Practice/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_15_Practice/Lesson_15_Practice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_16_ArrayTools.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_17_Encapsulation/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_17_Encapsulation/Lesson_17_Encapsulation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_18_Polymorphism/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_18_Polymorphism/Lesson_18_Polymorphism.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_19_Practice/Lesson_19_Practice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_19_Practice/out/production/Lesson_19_Practice/ait/practice/model/pizza/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_19_Practice/out/production/Lesson_19_Practice/ait/practice/model/pizza/Pizza.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_20_Inheritance/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_20_Inheritance/.idea/Lesson_20_Inheritance.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_20_Inheritance/Lesson_20_Inheritance.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_21_Computer/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_21_Computer/.idea/Lesson_21_Computer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_21_Computer/Lesson_21_Computer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_22_OOP/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_22_OOP/.idea/Lesson_22_OOP.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_22_OOP/Lesson_22_OOP.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_23_Supermarket/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_23_Supermarket/.idea/Lesson_23_Supermarket.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_23_Supermarket/Lesson_23_Supermarket.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_24_WrapperClasses/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_24_WrapperClasses/.idea/Lesson_24_WrapperClasses.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_24_WrapperClasses/Lesson_24_WrapperClasses.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_25_String/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_25_String/.idea/Lesson_25_String.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_25_String/Lesson_25_String.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/.idea/Lesson_26_UserTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/Lesson_26_UserTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/apiguardian-api-1.1.2-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/apiguardian-api-1.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/junit-jupiter-5.8.1-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/junit-jupiter-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/junit-jupiter-api-5.8.1-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/junit-jupiter-api-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/junit-jupiter-engine-5.8.1-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/junit-jupiter-engine-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/junit-jupiter-params-5.8.1-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/junit-jupiter-params-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/junit-platform-commons-1.8.1-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/junit-platform-commons-1.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/junit-platform-engine-1.8.1-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/junit-platform-engine-1.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/opentest4j-1.2.0-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_26_UserTest/lib/opentest4j-1.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_27_StringBuilder/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_27_StringBuilder/.idea/Lesson_27_StringBuilder.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_27_StringBuilder/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_27_StringBuilder/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_27_StringBuilder/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_27_StringBuilder/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_27_StringBuilder/Lesson_27_StringBuilder.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_28_Practice/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_28_Practice/.idea/Lesson_28_Practice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_28_Practice/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_28_Practice/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_28_Practice/Lesson_28_Practice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_29_Employee/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_29_Employee/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_29_Employee/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_29_Employee/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_29_Employee/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_29_Employee/Lesson_29_Employee.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_30_Company/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_30_Company/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_30_Company/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_30_Company/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_30_Company/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_30_Company/Lesson_30_Company.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_31_CompanyAdv/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_31_CompanyAdv/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_31_CompanyAdv/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_31_CompanyAdv/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_31_CompanyAdv/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_31_CompanyAdv/Lesson_31_CompanyAdv.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_31_CompanyAdv/lib/apiguardian-api-1.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_31_CompanyAdv/lib/junit-jupiter-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_31_CompanyAdv/lib/junit-jupiter-api-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_31_CompanyAdv/lib/junit-jupiter-engine-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_31_CompanyAdv/lib/junit-jupiter-params-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_31_CompanyAdv/lib/junit-platform-commons-1.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_31_CompanyAdv/lib/junit-platform-engine-1.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_31_CompanyAdv/lib/opentest4j-1.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_32_Generic/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_32_Generic/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_32_Generic/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_32_Generic/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_32_Generic/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_32_Generic/Lesson_32_Generic.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_33_Practice/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_33_Practice/Lesson_33_Practice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_33_Practice/src/ait/example1/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_33_Practice/src/ait/example1/CarAppRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_33_Practice/src/ait/example1/CarAppRunner2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_33_Practice/src/ait/example1/Plane.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_33_Practice/src/ait/example1/Transport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_33_Practice/src/ait/example1/Truck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_33_Practice/src/ait/example2/Audi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_33_Practice/src/ait/example2/Bmw.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_33_Practice/src/ait/example2/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_33_Practice/src/ait/example2/CarAppRunner2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_33_Practice/src/ait/example2/Plane.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_33_Practice/src/ait/example2/Transport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_33_Practice/src/ait/example3/Example3Runner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_33_Practice/src/ait/example3/SomeUtilityClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_33_Practice/src/ait/example3/entity/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_33_Practice/src/ait/example3/entity/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_33_Practice/src/ait/example3/entity/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_33_Practice/src/ait/example4/Example4Runner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_33_Practice/src/ait/example4/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_34_Comparator/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_34_Comparator/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_34_Comparator/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_34_Comparator/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_34_Comparator/Lesson_34_Comparator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_35_ArraysSort/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_35_ArraysSort/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_35_ArraysSort/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_35_ArraysSort/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_35_ArraysSort/Lesson_35_ArraysSort.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_35_ArraysSort/lib/apiguardian-api-1.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_35_ArraysSort/lib/junit-jupiter-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_35_ArraysSort/lib/junit-jupiter-api-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_35_ArraysSort/lib/junit-jupiter-engine-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_35_ArraysSort/lib/junit-jupiter-params-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_35_ArraysSort/lib/junit-platform-commons-1.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_35_ArraysSort/lib/junit-platform-engine-1.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_35_ArraysSort/lib/opentest4j-1.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_36_Wardrobe/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_36_Wardrobe/.idea/copyright/Igor_Volotovskyi.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_36_Wardrobe/.idea/copyright/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_36_Wardrobe/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_36_Wardrobe/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_36_Wardrobe/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_36_Wardrobe/Lesson_36_Wardrobe.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_36_Wardrobe/lib/apiguardian-api-1.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_36_Wardrobe/lib/junit-jupiter-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_36_Wardrobe/lib/junit-jupiter-api-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_36_Wardrobe/lib/junit-jupiter-engine-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_36_Wardrobe/lib/junit-jupiter-params-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_36_Wardrobe/lib/junit-platform-commons-1.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_36_Wardrobe/lib/junit-platform-engine-1.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_36_Wardrobe/lib/opentest4j-1.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_36_Wardrobe/src/ait/wardrobe/test/WardrobeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lib/apiguardian-api-1.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lib/junit-jupiter-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lib/junit-jupiter-api-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lib/junit-jupiter-engine-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lib/junit-jupiter-params-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lib/junit-platform-commons-1.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lib/junit-platform-engine-1.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lib/opentest4j-1.2.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Homework/Homework_24/src/ait/values/ValuesOfPrimitives.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Homework/Homework_32_Cars/src/ait/cars/dao/GarageImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Homework/Homework_32_Cars/src/ait/cars/dao/GarageImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Homework/Homework_32_Cars/src/ait/cars/test/GarageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Homework/Homework_32_Cars/src/ait/cars/test/GarageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Homework/Homework_33/src/ait/computer/dao/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Homework/Homework_33/src/ait/computer/dao/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Homework/Homework_33/src/ait/computer/model/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Homework/Homework_33/src/ait/computer/model/Computer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Homework/Homework_33/src/ait/computer/model/Laptop.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Homework/Homework_33/src/ait/computer/model/Laptop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Homework/Homework_33/src/ait/computer/model/SmartPhone.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Homework/Homework_33/src/ait/computer/model/SmartPhone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Homework/Homework_34/src/ait/arrays/test/ArrayToolsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Homework/Homework_34/src/ait/arrays/test/ArrayToolsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson_21_Computer/src/ait/computer/CastingAppl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson_21_Computer/src/ait/computer/CastingAppl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson_21_Computer/src/ait/computer/ComputerAppl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson_21_Computer/src/ait/computer/ComputerAppl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson_21_Computer/src/ait/computer/model/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson_21_Computer/src/ait/computer/model/Computer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson_21_Computer/src/ait/computer/model/Laptop.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson_21_Computer/src/ait/computer/model/Laptop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson_21_Computer/src/ait/computer/model/Smartphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson_21_Computer/src/ait/computer/model/Smartphone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson_29_Employee/src/ait/employee/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson_29_Employee/src/ait/employee/model/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson_29_Employee/src/ait/employee/model/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson_29_Employee/src/ait/employee/model/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson_29_Employee/src/ait/employee/model/SalesManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson_29_Employee/src/ait/employee/model/SalesManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson_29_Employee/src/ait/employee/model/WageEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson_29_Employee/src/ait/employee/model/WageEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson_30_Company/src/ait/employee/EmployeeAppl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson_30_Company/src/ait/employee/dao/CompanyImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson_30_Company/src/ait/employee/dao/CompanyImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson_31_CompanyAdv/src/ait/employee/dao/CompanyImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson_31_CompanyAdv/src/ait/employee/dao/CompanyImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson_34_Comparator/src/ait/arrays/test/ArrayToolsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson_34_Comparator/src/ait/arrays/test/ArrayToolsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson_36_Wardrobe/src/ait/wardrobe/model/Wardrobe.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson_36_Wardrobe/src/ait/wardrobe/model/Wardrobe.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2Wr6c7jXf4msahUJwhfsotiCMsg" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/igvol/Documents/IdeaProjects/group_34.1/basic_programming_Java/Lessons/Lesson_16_ArrayTools&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6d24ea2-fb47-4f7e-aeff-6a644db6cb57" name="Changes" comment="" />
+      <created>1697478427081</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697478427081</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Les 16">
+      <option name="closed" value="true" />
+      <created>1697478497940</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697478497940</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Les 16" />
+    <option name="LAST_COMMIT_MESSAGE" value="Les 16" />
+  </component>
+</project>

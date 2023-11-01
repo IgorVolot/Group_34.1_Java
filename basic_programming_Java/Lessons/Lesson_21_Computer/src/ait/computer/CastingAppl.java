@@ -1,5 +1,14 @@
 package ait.computer;
 
+/*
+ * Copyright (c) 2023.
+ * Igor Volotovskyi
+ */
+
+import ait.computer.model.Computer;
+import ait.computer.model.Laptop;
+import ait.computer.model.Smartphone;
+
 public class CastingAppl {
     public static void main(String[] args) {
         Computer lap1 = new Laptop("i7", 16, 512, "Asus", 3.0, 2.1);
