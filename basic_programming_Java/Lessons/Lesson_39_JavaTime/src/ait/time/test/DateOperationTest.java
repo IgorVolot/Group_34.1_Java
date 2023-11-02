@@ -15,7 +15,7 @@ class DateOperationTest {
     @Test
     void getAge() {
         assertEquals(62, DateOperation.getAge("12/04/1961"));
-        assertEquals(61, DateOperation.getAge("1961 - 11 - 28"));
+        assertEquals(61, DateOperation.getAge("1961-11-28"));
     }
 
     @Test

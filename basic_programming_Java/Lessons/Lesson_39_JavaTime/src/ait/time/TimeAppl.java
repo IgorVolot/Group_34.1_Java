@@ -101,6 +101,7 @@ public class TimeAppl {
         df = DateTimeFormatter.ofPattern("dd/MMMM/yyyy", Locale.forLanguageTag("uk"));
         date = gagarin.format(df);
         System.out.println(date);
+        System.out.println();
 
         date = "31/10/2023";
         df = DateTimeFormatter.ofPattern("dd/MM/yyyy");
