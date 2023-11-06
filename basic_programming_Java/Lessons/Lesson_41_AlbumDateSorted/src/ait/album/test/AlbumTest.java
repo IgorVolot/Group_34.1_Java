@@ -13,6 +13,7 @@ import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -31,12 +32,12 @@ class AlbumTest {
     void setUp() {
         album = new AlbumImpl(7);
         ph = new Photo[6];
-        ph[0] = new Photo(1, 1, "title1", "url1", now.minusDays(7));
-        ph[1] = new Photo(1, 2, "title2", "url2", now.minusDays(7));
+        ph[0] = new Photo(1, 1, "title1", "url1", LocalDate.now().minusDays(1).atStartOfDay());
+        ph[1] = new Photo(1, 2, "title2", "url2", LocalDate.now().minusDays(1).atStartOfDay());
         ph[2] = new Photo(1, 3, "title3", "url3", now.minusDays(5));
-        ph[3] = new Photo(2, 1, "title1", "url1", now.minusDays(7));
-        ph[4] = new Photo(2, 4, "title4", "url4", now.minusDays(2));
-        ph[5] = new Photo(1, 4, "title4", "url1", now.minusDays(2));
+        ph[3] = new Photo(2, 1, "title1", "url1", LocalDate.now().minusDays(1).atStartOfDay());
+        ph[4] = new Photo(2, 4, "title4", "url4", LocalDate.now().minusDays(2).atTime(LocalTime.MAX));
+        ph[5] = new Photo(1, 4, "title4", "url1", LocalDate.now().minusDays(2).atTime(LocalTime.MAX));
         for (int i = 0; i < ph.length; i++) {
             album.addPhoto(ph[i]);
         }

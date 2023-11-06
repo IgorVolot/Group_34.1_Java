@@ -8,6 +8,7 @@ package ait.album.dao;
 import ait.album.model.Photo;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.function.Predicate;
@@ -15,7 +16,10 @@ import java.util.function.Predicate;
 public class AlbumImpl implements Album {
     private Photo[] photos;
     private int size;
-    private Comparator<Photo> comparator = (p1, p2) -> p1.getDate().compareTo(p2.getDate());
+    private Comparator<Photo> comparator = (p1, p2) -> {
+        int res = p1.getDate().compareTo(p2.getDate());
+        return res != 0 ? res : Integer.compare(p1.getPhotoId(), p2.getPhotoId());
+    };
 
     public AlbumImpl(int capacity) {
         this.photos = new Photo[capacity];
@@ -39,8 +43,7 @@ public class AlbumImpl implements Album {
     public boolean removePhoto(int photoId, int albumId) {
         for (int i = 0; i < size; i++) {
             if (photos[i].getPhotoId() == photoId && photos[i].getAlbumId() == albumId) {
-                photos[i] = getPhotoFromAlbum(photoId, albumId);
-                System.arraycopy(photos, i + 1, photos, i, size - i - i);
+                System.arraycopy(photos, i + 1, photos, i, size - i - 1);
                 photos[--size] = null;
                 return true;
             }
@@ -75,7 +78,13 @@ public class AlbumImpl implements Album {
 
     @Override
     public Photo[] getPhotoBetweenDate(LocalDate dateFrom, LocalDate dateTo) {
-        return findPhotoByPredicate(p -> p.getDate().toLocalDate().isAfter(dateFrom.minusDays(1)) && p.getDate().toLocalDate().isBefore(dateTo.plusDays(1)));
+        Photo pattern = new Photo(0, Integer.MIN_VALUE, null, null, dateFrom.atStartOfDay());
+        int from = Arrays.binarySearch(photos, 0, size, pattern, comparator);
+        from = from >= 0 ? from : -from - 1;
+        pattern = new Photo(0, Integer.MAX_VALUE, null, null, dateTo.atTime(LocalTime.MAX));
+        int to = Arrays.binarySearch(photos, 0, size, pattern, comparator);
+        to = to >= 0 ? to : -to - 1;
+        return Arrays.copyOfRange(photos, from, to);
     }
 
     @Override
