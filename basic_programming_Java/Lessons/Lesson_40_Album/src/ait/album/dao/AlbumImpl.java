@@ -15,6 +15,7 @@ import java.util.Objects;
 import java.util.function.Predicate;
 
 public class AlbumImpl implements Album {
+    int a = 0;
     private Photo[] photos;
     private int size;
 

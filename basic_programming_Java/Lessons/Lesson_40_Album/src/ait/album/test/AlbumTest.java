@@ -19,7 +19,6 @@ import java.util.Comparator;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AlbumTest {
-    int c = 0;
     Album album;
     Photo[] ph;
     LocalDateTime now = LocalDateTime.now();
