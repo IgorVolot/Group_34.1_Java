@@ -7,6 +7,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -18,7 +19,7 @@ class ForumTest {
 
     Comparator<Post> comparator = (p1, p2) -> {
         int res = Integer.compare(p1.getPostId(), p2.getPostId());
-        return res = res >= 0 ? res : p1.addLike() - p2.addLike();
+        return res = res >= 0 ? res : p1.getDate().compareTo(p2.getDate());
     };
 
     @BeforeEach
@@ -41,8 +42,15 @@ class ForumTest {
     void addPost() {
         assertFalse(forum.addPost(null));
         assertFalse(forum.addPost(posts[2]));
-        Post post = new Post(1008, "title8", "author3", "content8");
-        assertTrue(forum.addPost(post));
+        Arrays.sort(posts, comparator);
+        Post newPost = new Post(1008, "title8", "author3", "content8");
+        Post[] postCopy = Arrays.copyOf(posts, posts.length * 2);
+        int index = Arrays.binarySearch(postCopy, 0, postCopy.length - 1, newPost);
+        index = index >= 0 ? index : -index - 1;
+        System.arraycopy(postCopy, index, postCopy, index + 1, postCopy.length - index - 1);
+        postCopy[index] = newPost;
+        posts = postCopy;
+        assertTrue(forum.addPost(newPost));
         assertEquals(8, forum.size());
     }
 
@@ -62,7 +70,7 @@ class ForumTest {
 
     @Test
     void getPostById() {
-        assertEquals(posts[4], forum.getPostById(1005));
+        assertEquals(posts[1], forum.getPostById(1002));
         assertNull(forum.getPostById(1010));
     }
 
@@ -76,8 +84,8 @@ class ForumTest {
 
     @Test
     void testGetPostsByAuthor() {
-        LocalDate ld = LocalDate.now();
-        Post[] actual = forum.getPostsByAuthor("author1", ld.minusDays(6), ld.minusDays(3));
+//        LocalDate ld = LocalDate.now();
+        Post[] actual = forum.getPostsByAuthor("author1");
         Post[] expected = {posts[0], posts[2]};
         Arrays.sort(actual, comparator);
         assertArrayEquals(expected, actual);
