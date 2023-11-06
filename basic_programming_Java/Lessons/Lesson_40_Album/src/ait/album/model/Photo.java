@@ -8,6 +8,7 @@ package ait.album.model;
 import java.time.LocalDateTime;
 
 public class Photo implements Comparable<Photo> {
+    int b = 0;
     private int albumId;
     private int photoId;
     private String title;

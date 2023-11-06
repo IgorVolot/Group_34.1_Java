@@ -10,6 +10,7 @@ import ait.album.model.Photo;
 import java.time.LocalDate;
 
 public interface Album {
+    int a = 0;
     boolean addPhoto(Photo photo);
 
     boolean removePhoto(int photoId, int albumId);

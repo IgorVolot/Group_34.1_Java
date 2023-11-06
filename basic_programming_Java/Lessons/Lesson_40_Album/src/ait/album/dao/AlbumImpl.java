@@ -29,7 +29,6 @@ public class AlbumImpl implements Album {
             return false;
         }
         photos[size++] = photo;
-//        keepPhotoSorted(photo);
         return true;
     }
 
@@ -95,13 +94,13 @@ public class AlbumImpl implements Album {
         return size;
     }
 
-    private void keepPhotoSorted(Photo photo) {
-        Photo[] photoCopy = Arrays.copyOf(photos, photos.length + 1);
-        Arrays.sort(photoCopy);
-        int index = Arrays.binarySearch(photoCopy, 0, photoCopy.length - 1, photo);
-        index = index >= 0 ? index : -index - 1;
-        System.arraycopy(photoCopy, index, photoCopy, index + 1, photoCopy.length - index - 1);
-        photoCopy[index] = photo;
-        photos = photoCopy;
-    }
+//    private void keepPhotoSorted(Photo photo) {
+//        Photo[] photoCopy = Arrays.copyOf(photos, photos.length + 1);
+//        Arrays.sort(photoCopy);
+//        int index = Arrays.binarySearch(photoCopy, 0, photoCopy.length - 1, photo);
+//        index = index >= 0 ? index : -index - 1;
+//        System.arraycopy(photoCopy, index, photoCopy, index + 1, photoCopy.length - index - 1);
+//        photoCopy[index] = photo;
+//        photos = photoCopy;
+//    }
 }
