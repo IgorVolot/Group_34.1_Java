@@ -44,6 +44,4 @@ public class FibonacciIterator implements Iterator<Integer> {
         prevPrev = curr;
         return prev;
     }
-
-
 }
