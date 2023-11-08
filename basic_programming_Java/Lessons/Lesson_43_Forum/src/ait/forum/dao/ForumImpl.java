@@ -4,6 +4,7 @@ import ait.forum.model.Post;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -88,7 +89,7 @@ public class ForumImpl implements Forum {
         pattern.setDate(dateFrom.atStartOfDay());
         int from = -Arrays.binarySearch(posts, 0, size, pattern, comparator) - 1;
         pattern = new Post(Integer.MAX_VALUE, null, author, null);
-        pattern.setDate(dateTo.atStartOfDay());
+        pattern.setDate(dateTo.atTime(LocalTime.MAX));
         int to = -Arrays.binarySearch(posts, 0, size, pattern, comparator) - 1;
         return Arrays.copyOfRange(posts, from, to);
     }
