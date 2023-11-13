@@ -8,18 +8,25 @@ public class ComplexityAppl {
 
         // O(1) - const
         double mid = (arr[0] + arr[arr.length - 1]) / 2.;
+        //..................................................................
 
         // O(log(n)) - log
         int index = Arrays.binarySearch(arr, 10);
+        //..................................................................
+
 
         // O(n) - linear
         int sum = 0;
         for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
         }
+        //..................................................................
+
 
         // O(n * log(n)) - polylinear
         Arrays.sort(arr);
+
+        //..................................................................
 
         // O(n * n) - quadratic
         for (int i = 0; i < arr.length - 1; i++) {
@@ -31,8 +38,7 @@ public class ComplexityAppl {
                 }
             }
         }
+        //..................................................................
 
-        // O(n * log(n)) - polylinear
-        Arrays.sort(arr);
     }
 }

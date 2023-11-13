@@ -26,11 +26,13 @@ public class MyArrayList<E> implements IList<E> {
         elements = new Object[initialCapacity];
     }
 
+    // O(1)
     @Override
     public int size() {
         return size;
     }
 
+    // O(1)
     @Override
     public boolean add(E element) {
         ensureCapacity();
@@ -38,6 +40,7 @@ public class MyArrayList<E> implements IList<E> {
         return true;
     }
 
+    // O(1)
     private void ensureCapacity() {
         if (size == MAX_ARRAY_SIZE) {
             throw new OutOfMemoryError();
@@ -51,38 +54,44 @@ public class MyArrayList<E> implements IList<E> {
         }
     }
 
+    // O(n)
     @Override
     public void clear() {
         for (int i = 0; i < size; i++) {
-            remove(elements[i]);
+            elements[i] = null;
         }
-
-
-        // TODO
+        size = 0;
+//        elements = new Object[elements.length];
     }
 
+    // O(n)
     @Override
     public boolean add(int index, E element) {
         if (index == size) {
             return add(element);
         }
-        System.arraycopy(elements, index, elements, index + 1, size - index - 1);
-        size++;
+        checkIndex(index);
+        ensureCapacity();
+        System.arraycopy(elements, index, elements, index + 1, size++ - index);
+        elements[index] = element;
         return true;
     }
 
+    // O(1)
     @Override
     public E get(int index) {
         checkIndex(index);
         return (E) elements[index];
     }
 
+    // O(1)
     private void checkIndex(int index) {
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException(index);
         }
     }
 
+    // O(n)
     @Override
     public int indexOf(Object o) {
         if (o != null) {
@@ -102,6 +111,7 @@ public class MyArrayList<E> implements IList<E> {
         return -1;
     }
 
+    // O(n)
     @Override
     public int lastIndexOf(Object o) {
         if (o != null) {
@@ -120,6 +130,7 @@ public class MyArrayList<E> implements IList<E> {
         return -1;
     }
 
+    // O(n)
     @Override
     public E remove(int index) {
         checkIndex(index);
@@ -128,27 +139,28 @@ public class MyArrayList<E> implements IList<E> {
         return victim;
     }
 
+    // O(1)
     @Override
-    public E set(int index, E element) {  // TODO
+    public E set(int index, E element) {
         checkIndex(index);
         E victim = (E) elements[index];
-        System.arraycopy(elements, index + 1, elements, index, --size - index);
-        add(index, element);
+        elements[index] = element;
         return victim;
     }
 
+    // O(1)
     @Override
     public Iterator<E> iterator() {
         return new Iterator<E>() {
+            int i = 0;
             @Override
             public boolean hasNext() {
-                return indexOf(elements) < size;
+                return i < size;
             }
 
             @Override
             public E next() {
-                E curr = get(indexOf(elements) + 1);
-                return null;
+                return (E) elements[i++];
             }
         };
     }
