@@ -42,30 +42,20 @@ public class MyLinkedList<E> implements IList<E> {
 
     // O(n)
     @Override
-    public boolean add(int index, E element) { // TODO
+    public boolean add(int index, E element) {
         if (index == size) {
             return add(element);
         }
-        if (index == 0){
-            Node<E> next = first;
-            Node<E> newNode = new Node<>(null, element, next.prev);
-            first = newNode;
-            newNode.data = element;
-            size++;
-            return true;
+        Node<E> node = getNodeByIndex(index);
+        Node<E> newNode = new Node<>(node.prev, element, node);
+        node.prev = newNode;
+        if (index != 0) {
+            newNode.prev.next = newNode;
         } else {
-            Node<E> prev = getNodeByIndex(index - 1);
-            Node<E> newNode = new Node<>(prev, element, prev.next);
-            Node<E> next = newNode;
-
-        newNode.prev = prev.next;
-        newNode.next = next.prev;
-            newNode.data = element;
-//            prev.next.next = null;
-//            next.prev.prev = null;
-            size++;
-            return true;
+            first = newNode;
         }
+        size++;
+        return true;
     }
 
     // O(n)
@@ -173,7 +163,6 @@ public class MyLinkedList<E> implements IList<E> {
     public Iterator<E> iterator() {
         return new Iterator<E>() {
             Node<E> node = first;
-            int index = 0;
 
             @Override
             public boolean hasNext() {
@@ -184,7 +173,6 @@ public class MyLinkedList<E> implements IList<E> {
             public E next() {
                 E element = node.data;
                 node = node.next;
-                index++;
                 return element;
             }
         };

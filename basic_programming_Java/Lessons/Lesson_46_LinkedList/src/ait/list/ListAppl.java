@@ -71,7 +71,7 @@ public class ListAppl {
         System.out.println("------- Add (index, element) ---------");
 
         num = 25;
-        System.out.println(list.add( 0, num));
+        System.out.println(list.add( 3, num));
         System.out.println("Size of List = " + list.size());
         for (int i = 0; i < list.size(); i++) {
             System.out.print(list.get(i) + " | ");
