@@ -3,8 +3,7 @@ package ait.supermarket.model;
 import ait.supermarket.dao.SupermarketImpl;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -17,6 +16,12 @@ public class Main {
         products.addProduct(new Product(1555l, "product5", "category4", "brand4", 2.4, expDate.plusDays(4)));
 
         products.forEach(product -> System.out.println(product));
-        System.out.println("Expired products: " + products.findProductWithExpiredDate());
+        System.out.println();
+        System.out.println("Products with expired date:");
+        Iterable<Product> res = products.findProductWithExpiredDate();
+        for (Product product : res) {
+            System.out.println(product);
+        }
+        System.out.println();
     }
 }

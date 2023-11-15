@@ -4,12 +4,13 @@ import ait.supermarket.model.Product;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.function.Predicate;
 
 public class SupermarketImpl implements Supermarket {
-    private List<Product> products;
+    private Collection<Product> products;
 
     public SupermarketImpl() {
         products = new ArrayList<>();
@@ -17,10 +18,7 @@ public class SupermarketImpl implements Supermarket {
 
     @Override
     public boolean addProduct(Product product) {
-        if (product == null) {
-            throw new RuntimeException("Product cannot be null");
-        }
-        if (products.contains(product)) {
+        if (product == null || products.contains(product)) {
             return false;
         }
         return products.add(product);
@@ -44,17 +42,17 @@ public class SupermarketImpl implements Supermarket {
     }
 
     @Override
-    public List<Product> findByCategory(String category) {
-        return findProductByPredicate(p -> p.getCategory().equals(category));
+    public Iterable<Product> findByCategory(String category) {
+        return findProductByPredicate(p -> p.getCategory().equalsIgnoreCase(category));
     }
 
     @Override
-    public List<Product> findByBrand(String brand) {
-        return findProductByPredicate(p -> p.getBrand().equals(brand));
+    public Iterable<Product> findByBrand(String brand) {
+        return findProductByPredicate(p -> p.getBrand().equalsIgnoreCase(brand));
     }
 
     @Override
-    public List<Product> findProductWithExpiredDate() {
+    public Iterable<Product> findProductWithExpiredDate() {
         return findProductByPredicate(p -> p.getExpDate().isBefore(LocalDate.now()));
     }
 
@@ -68,7 +66,7 @@ public class SupermarketImpl implements Supermarket {
         return products.iterator();
     }
 
-    private List<Product> findProductByPredicate(Predicate<Product> predicate) {
+    private Iterable<Product> findProductByPredicate(Predicate<Product> predicate) {
         List<Product> res = new ArrayList<>();
         for (Product product : products) {
             if (predicate.test(product)) {
