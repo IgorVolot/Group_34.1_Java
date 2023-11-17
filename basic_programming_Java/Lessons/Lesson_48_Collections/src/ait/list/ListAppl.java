@@ -17,6 +17,7 @@ public class ListAppl {
         list.add("Spring");
         list.set(0, "Java 11");
         list.forEach(t -> System.out.println(t));
+        System.out.println();
 
 
         System.out.println("---------------------");
