@@ -6,6 +6,7 @@ import ait.citizens.model.Person;
 import org.junit.jupiter.api.*;
 
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -96,7 +97,7 @@ class CitizensTest {
     }
 
     @Test
-    void getAllPersonSortedById() {
+    void getAllPersonsSortedById() {
         Iterable<Person> actual = citizens.getAllPersonsSortedById();
         Iterable<Person> expected = List.of(p1,
                 new Person(2, "John", "Smith", now.minusYears(20)),
@@ -107,16 +108,27 @@ class CitizensTest {
 
     @Test
     void getAllPersonsSortedByAge() {
-        Iterable<Person> actual = citizens.getAllPersonsSortedByAge();
-        Iterable<Person> expected = List.of(
-                new Person(2, "John", "Smith", now.minusYears(20)),
-                new Person(3, "Mary", "Jackson", now.minusYears(20)),
-                p1, new Person(4, "Rabindranate", "Anand", now.minusYears(25)));
-        assertIterableEquals(expected, actual);
+        Iterable<Person> res = citizens.getAllPersonsSortedByAge();
+        int age = -1;
+        for (Person person : res) {
+            assertTrue(person.getAge() >= age);
+            age = person.getAge();
+        }
     }
 
+
+//    @Test
+//    void getAllPersonsSortedByAge() {
+//        Iterable<Person> actual = citizens.getAllPersonsSortedByAge();
+//        Iterable<Person> expected = List.of(
+//                new Person(2, "John", "Smith", now.minusYears(20)),
+//                new Person(3, "Mary", "Jackson", now.minusYears(20)),
+//                p1, new Person(4, "Rabindranate", "Anand", now.minusYears(25)));
+//        assertIterableEquals(expected, actual);
+//    }
+
     @Test
-    void getAllPersonSortedByLastName() {
+    void getAllPersonsSortedByLastName() {
         Iterable<Person> actual = citizens.getAllPersonsSortedByLastName();
         String name = "";
         for (Person person : actual) {

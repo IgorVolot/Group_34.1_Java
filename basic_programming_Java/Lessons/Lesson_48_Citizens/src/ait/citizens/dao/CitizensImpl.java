@@ -97,19 +97,19 @@ public class CitizensImpl implements Citizens {
         return lastNameList.subList(from, to);
     }
 
-    // O(log(n))
+    // O(1)
     @Override
     public Iterable<Person> getAllPersonsSortedById() {
         return idList;
     }
 
-    // O(log(n))
+    // O(1)
     @Override
     public Iterable<Person> getAllPersonsSortedByAge() {
         return ageList;
     }
 
-    // O(log(n))
+    // O(1)
     @Override
     public Iterable<Person> getAllPersonsSortedByLastName() {
         return lastNameList;
