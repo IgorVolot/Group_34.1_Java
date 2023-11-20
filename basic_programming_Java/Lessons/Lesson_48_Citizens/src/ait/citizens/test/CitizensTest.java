@@ -118,7 +118,7 @@ class CitizensTest {
 
 
 //    @Test
-//    void getAllPersonsSortedByAge() {
+//    void getAllPersonsSortedByAge() {  // тоже правильно
 //        Iterable<Person> actual = citizens.getAllPersonsSortedByAge();
 //        Iterable<Person> expected = List.of(
 //                new Person(2, "John", "Smith", now.minusYears(20)),
