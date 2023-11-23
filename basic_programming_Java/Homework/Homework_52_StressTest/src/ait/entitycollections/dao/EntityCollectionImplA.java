@@ -7,6 +7,11 @@ public class EntityCollectionImplA implements EntityCollection{
 
     private int value;
 
+    public EntityCollectionImplA(int value) {
+        this.entities = new HashSet<>();
+        this.value = value;
+    }
+
     // O(1)
     @Override
     public void add(Entity entity) {
@@ -16,7 +21,7 @@ public class EntityCollectionImplA implements EntityCollection{
     // O(n)
     @Override
     public Entity removeMaxValue() {
-        Entity maxValue = new EntityCollectionImplA();
+        Entity maxValue = (Entity) new EntityCollectionImplA(value);
         for (Entity entity : entities) {
             if (entity.getValue() > maxValue.getValue()) {
                 maxValue = entity;
@@ -24,10 +29,5 @@ public class EntityCollectionImplA implements EntityCollection{
             entities.remove(entity);
         }
         return maxValue;
-    }
-
-    @Override
-    public int getValue() {
-        return value;
     }
 }

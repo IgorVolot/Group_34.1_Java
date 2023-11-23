@@ -1,6 +1,6 @@
 package ait.entitycollections.dao;
 
-public interface EntityCollection extends Entity {
+public interface EntityCollection {
     public void add(Entity entity);
 
     public Entity removeMaxValue();

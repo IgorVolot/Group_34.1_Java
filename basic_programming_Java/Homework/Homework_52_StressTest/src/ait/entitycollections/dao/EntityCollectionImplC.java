@@ -26,16 +26,10 @@ public class EntityCollectionImplC implements EntityCollection {
     // O(log(n))
     @Override
     public Entity removeMaxValue() {
-        Entity maxValue = new EntityCollectionImplB(value);
-        Entity victim = entities.higher(maxValue);
+        Entity victim = entities.last();
         if (victim != null){
             entities.remove(victim);
         }
         return victim;
-    }
-
-    @Override
-    public int getValue() {
-        return value;
     }
 }
