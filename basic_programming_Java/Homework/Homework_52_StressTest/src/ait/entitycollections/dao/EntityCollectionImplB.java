@@ -17,9 +17,6 @@ public class EntityCollectionImplB implements EntityCollection {
     // O(log(n))
     @Override
     public void add(Entity entity) {
-        if (entity == null) {
-            throw new RuntimeException("Entity cannot be null!");
-        }
         entities.add(entity);
     }
 
