@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="19773abf-cfca-44f3-a293-a59780780323" name="Changes" comment="add message">
+      <change beforePath="$PROJECT_DIR$/../HW_42_Fibonacci/src/ait/fibonacci/FibonacciAppl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HW_42_Fibonacci/src/ait/fibonacci/FibonacciAppl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HW_42_Fibonacci/src/ait/fibonacci/model/Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HW_42_Fibonacci/src/ait/fibonacci/model/Fibonacci.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework_41_Forum/src/ait/forum/dao/ForumImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework_41_Forum/src/ait/forum/dao/ForumImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework_41_Forum/src/ait/forum/model/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework_41_Forum/src/ait/forum/model/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework_41_Forum/src/ait/forum/test/ForumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework_41_Forum/src/ait/forum/test/ForumTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lessons/Lesson_45_Practice/src/ait/watch/dao/TimerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lessons/Lesson_45_Practice/src/ait/watch/dao/TimerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lessons/Lesson_46_LinkedList/src/ait/list/model/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lessons/Lesson_46_LinkedList/src/ait/list/model/MyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lessons/Lesson_47_CompanyList/src/ait/employee/dao/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lessons/Lesson_47_CompanyList/src/ait/employee/dao/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lessons/Lesson_47_CompanyList/src/ait/employee/dao/CompanyListImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lessons/Lesson_47_CompanyList/src/ait/employee/dao/CompanyListImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lessons/Lesson_48_Citizens/src/ait/citizens/dao/CitizensImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lessons/Lesson_48_Citizens/src/ait/citizens/dao/CitizensImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lessons/Lesson_48_Citizens/src/ait/citizens/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lessons/Lesson_48_Citizens/src/ait/citizens/model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lessons/Lesson_48_Citizens/src/ait/citizens/test/CitizensTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lessons/Lesson_48_Citizens/src/ait/citizens/test/CitizensTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../../.." value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2YJUL0CCQnB4Dp3K6HcJwb9CZ69" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Java"
+  }
+}]]></component>
+  <component name="Push.Settings">
+    <option name="SHOW_DETAILS_PANEL" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="19773abf-cfca-44f3-a293-a59780780323" name="Changes" comment="" />
+      <created>1700243115973</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700243115973</updated>
+    </task>
+    <task id="LOCAL-00001" summary="init">
+      <option name="closed" value="true" />
+      <created>1700243408458</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700243408458</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init">
+      <option name="closed" value="true" />
+      <created>1700243820443</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700243820443</updated>
+    </task>
+    <task id="LOCAL-00003" summary="init">
+      <option name="closed" value="true" />
+      <created>1700244129566</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700244129566</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add message">
+      <option name="closed" value="true" />
+      <created>1700244278635</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700244278636</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <MESSAGE value="add message" />
+    <option name="LAST_COMMIT_MESSAGE" value="add message" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
