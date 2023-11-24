@@ -9,7 +9,7 @@ public class SwitchCaseAppl {
     }
 
     public static void calculator(double a, double b, int oper) {
-        //TODO Homework oper = 1 => a+b, oper = 2 => a-b, oper = 3 => a*b, oper = 4 => a/b
+        //Homework oper = 1 => a+b, oper = 2 => a-b, oper = 3 => a*b, oper = 4 => a/b
         //default print Wrong operation;
         switch (oper){
             case 1:

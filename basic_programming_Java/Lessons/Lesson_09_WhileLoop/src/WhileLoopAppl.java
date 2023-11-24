@@ -76,6 +76,6 @@ public class WhileLoopAppl {
     }
 
     public static void luckyNumber(int num){
-        //TODO Homework 2
+        // Homework 2
     }
 }
