@@ -1,33 +1,42 @@
 package ait.pomegranates.model;
 
-import ait.pomegranates.dao.Box;
-
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
-import java.util.Random;
-import java.util.stream.Stream;
 
-public class Pomegranate extends Box {
-    private static final int MIN = 10;
-    private static final int MAX = 20;
-    private List<Seed> seeds;
-    Stream<Integer> pomeNumbers = getPomeRandNums(MIN, MAX);
-    int totalGranatesInBox = totalGranatesInBox(pomeNumbers);
+public class Pomegranate implements Iterable<Seed> {
 
-    public Pomegranate(String boxName, List<Pomegranate> granates, List<Seed> seeds) {
-        super(boxName, granates);
+    List<Seed> seeds;
+
+    public Pomegranate() {
+        seeds = new ArrayList<>();
+    }
+
+    public Pomegranate(List<Seed> seeds) {
         this.seeds = seeds;
     }
-//    public Pomegranate(String boxName) {
-//        super(boxName);
-//    }
 
-    private int totalGranatesInBox(Stream<Integer> stream){
-        return stream.mapToInt(Integer::intValue).sum();
+    public void setSeeds(List<Seed> seeds) {
+        this.seeds = seeds;
     }
 
-    private Stream<Integer> getPomeRandNums(int min, int max) {
-        return new Random()
-                .ints(min, max)
-                .boxed();
+    public boolean addSeed(Seed seed) {
+        return seeds.add(seed);
     }
+
+    public int quantity() {
+        return seeds.size();
+    }
+
+    public double weight() {
+        return seeds.stream()
+                .mapToDouble(Seed::getWeight)
+                .sum();
+    }
+
+    @Override
+    public Iterator<Seed> iterator() {
+        return seeds.iterator();
+    }
+
 }

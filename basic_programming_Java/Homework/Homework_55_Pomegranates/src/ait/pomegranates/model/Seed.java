@@ -4,34 +4,50 @@ import java.util.List;
 import java.util.Random;
 import java.util.stream.Stream;
 
-public class Seed extends Pomegranate{
-    private static final int MIN = 400;
-    private static final int MAX = 700;
-    private double weight;
+public class Seed {
+    double weight = 2;
 
-    Stream<Integer> seedsNumbers = getSeedsRandNums(MIN, MAX);
+    public Seed() {
+    }
 
-    int totalSeedsInGranate = totalSeedsInPome(seedsNumbers);
-
-    public Seed(String boxName, List<Pomegranate> granates, List<Seed> seeds, double weight) {
-        super(boxName, granates, seeds);
+    public Seed(double weight) {
         this.weight = weight;
     }
-    //    public Seed(String boxName) {
-//        super(boxName);
-//    }
 
     public double getWeight() {
         return weight;
     }
 
-    private int totalSeedsInPome(Stream<Integer> stream){
-        return stream.mapToInt(Integer::intValue).sum();
+    public void setWeight(double weight) {
+        this.weight = weight;
     }
 
-    private Stream<Integer> getSeedsRandNums(int min, int max) {
-        return new Random()
-                .ints(min, max)
-                .boxed();
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        long temp;
+        temp = Double.doubleToLongBits(weight);
+        result = prime * result + (int) (temp ^ (temp >>> 32));
+        return result;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        Seed other = (Seed) obj;
+        if (Double.doubleToLongBits(weight) != Double.doubleToLongBits(other.weight)) {
+            return false;
+        }
+        return true;
+    }
+
 }
