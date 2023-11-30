@@ -8,6 +8,7 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 public class SupermarketImpl implements Supermarket {
     private Collection<Product> products;
@@ -33,12 +34,16 @@ public class SupermarketImpl implements Supermarket {
 
     @Override
     public Product findByBarCode(long barCode) {
-        for (Product product : products) {
-            if (product.getBarCode() == barCode) {
-                return product;
-            }
-        }
-        return null;
+//        for (Product product : products) {
+//            if (product.getBarCode() == barCode) {
+//                return product;
+//            }
+//        }
+//        return null;
+        return products.stream()
+                .filter(p -> p.getBarCode() == barCode)
+                .findFirst()
+                .orElse(null);
     }
 
     @Override
@@ -67,12 +72,15 @@ public class SupermarketImpl implements Supermarket {
     }
 
     private Iterable<Product> findProductByPredicate(Predicate<Product> predicate) {
-        List<Product> res = new ArrayList<>();
-        for (Product product : products) {
-            if (predicate.test(product)) {
-                res.add(product);
-            }
-        }
-        return res;
+//        List<Product> res = new ArrayList<>();
+//        for (Product product : products) {
+//            if (predicate.test(product)) {
+//                res.add(product);
+//            }
+//        }
+//        return res;
+        return products.stream()
+                .filter(p -> predicate.test(p))
+                .collect(Collectors.toList());
     }
 }
