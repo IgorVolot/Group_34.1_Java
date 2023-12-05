@@ -1,7 +1,6 @@
 package ait.titanic;
 
 import java.io.*;
-import java.util.Arrays;
 
 /*
         Задание 1. Рассчитаем общую стоимость проезда.
