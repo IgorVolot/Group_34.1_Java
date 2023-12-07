@@ -28,7 +28,6 @@ public class TarakanRaceAppl {
                 e.printStackTrace();
             }
         }
-
     }
 
     private static Thread[] startRace(int nTarakans) {

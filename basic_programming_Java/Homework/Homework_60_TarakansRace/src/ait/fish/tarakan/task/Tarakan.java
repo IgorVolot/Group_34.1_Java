@@ -3,6 +3,7 @@ package ait.fish.tarakan.task;
 import java.util.Random;
 
 public class Tarakan implements Runnable{
+    private static Object monitor = new Object();
     static int distance;
     static int minSleepTime = 2;
     static int maxSleepTime = 5;
@@ -45,8 +46,10 @@ public class Tarakan implements Runnable{
             }
             System.out.println(name);
         }
-        if (winner == null) {
-            winner = name;
+        synchronized (monitor){
+            if (winner == null) {
+                winner = name;
+            }
         }
     }
 }
