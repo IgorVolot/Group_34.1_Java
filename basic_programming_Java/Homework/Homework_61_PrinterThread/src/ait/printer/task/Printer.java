@@ -2,7 +2,6 @@ package ait.printer.task;
 
 public class Printer implements Runnable{
 
-    static int totalNumberToPrint = 100;
     int clockPeriod; // clock period (in minutes period)
     int number; // number of digits (number of Printer threads)
     Thread nextThread;
