@@ -38,10 +38,12 @@ public class Library {
         readers.get(2).getBooks().add(books.get(0));
         readers.get(1).getBooks().add(books.get(1));
     }
-    public List<Book> getBooks(){
+
+    public List<Book> getBooks() {
         return books;
     }
-    public List<Reader> getReaders(){
+
+    public List<Reader> getReaders() {
         return readers;
     }
 

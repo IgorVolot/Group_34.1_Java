@@ -2,7 +2,7 @@ package ait.practice.library.model;
 
 import java.util.Objects;
 
-public class Book implements Comparable<Book>{
+public class Book implements Comparable<Book> {
     private String author;
     private String name;
     private Integer issueYear;

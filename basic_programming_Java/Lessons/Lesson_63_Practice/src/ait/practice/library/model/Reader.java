@@ -1,11 +1,10 @@
 package ait.practice.library.model;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
 
-public class Reader implements Iterable<Book>{
+public class Reader {
     private String fio;
     private String email;
     private boolean subscriber;
@@ -76,13 +75,5 @@ public class Reader implements Iterable<Book>{
         sb.append(", books=").append(books);
         sb.append('}');
         return sb.toString();
-    }
-//    public Iterator<Book> getBooks() {
-//        return books.iterator();
-//    }
-
-    @Override
-    public Iterator<Book> iterator() {
-        return books.iterator();
     }
 }
