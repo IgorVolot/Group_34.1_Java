@@ -17,15 +17,8 @@ public class ElevatorAppl {
         Elevator stalin = new Elevator("Y. V. Stalin");
 
         Truck[] trucks = new Truck[N_TRUCK];
-//        for (int i = 0; i < trucks.length; i++) {
-//            trucks[i] = new Truck(N_RACES, CAPACITY, lenin, stalin);
-//        }
         for (int i = 0; i < trucks.length; i++) {
-            if (i % 2 == 0) {
-                trucks[i] = new Truck(N_RACES, CAPACITY, lenin);
-            } else {
-                trucks[i] = new Truck(N_RACES, CAPACITY, stalin);
-            }
+            trucks[i] = new Truck(N_RACES, CAPACITY, lenin, stalin);
         }
 
         Thread[] threads = new Thread[N_TRUCK];
