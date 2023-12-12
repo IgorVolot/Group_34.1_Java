@@ -1,0 +1,11 @@
+In this example, there is a shared resource (SharedResource) that is accessed by multiple threads.
+The StarvationThread continuously accesses the shared resource in a loop, simulating a long-running task
+that might cause other threads to be starved.
+
+The NormalThread threads attempt to access the shared resource as well. However, due to the continuous access
+by the StarvationThread, these normal threads may face difficulty gaining access to the shared resource,
+potentially leading to thread starvation.
+
+In a real-world scenario, thread starvation might occur when there is contention for a limited set of resources,
+and certain threads monopolize those resources, preventing others from making progress. It's essential to
+design concurrency controls carefully to avoid thread starvation situations.

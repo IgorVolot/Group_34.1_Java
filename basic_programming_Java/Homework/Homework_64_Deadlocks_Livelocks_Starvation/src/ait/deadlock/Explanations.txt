@@ -1,0 +1,9 @@
+In this example, DeadLockExample is implementing Runnable interface and it works on two Objects (String) by
+acquiring lock on each one of them one by one using synchronized block.
+
+In main method, I have three threads running for DeadLockExample and there is a shared resource between each of the threads.
+
+The threads are run in such a way that it will be able to acquire lock on the first object but when it’s trying
+to acquire lock on second object, it goes on wait state because it’s already locked by another thread. This forms
+a cyclic dependency for resource between Threads causing deadlock. When I execute the TestDeadlockExampleAppl,
+here is the output generated but program never terminates because of deadlock in java threads.

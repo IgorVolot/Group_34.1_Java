@@ -1,0 +1,7 @@
+In this example, two threads (Worker-1 and Worker-2) are trying to do work, but they are dependent on each other.
+They check if their colleague has finished work, and if so, they proceed with their own work. However,
+if both threads are in a state of waiting for the other to finish work, they may end up in a livelock where they
+keep checking and waiting without making any progress.
+
+Livelocks are less common than deadlocks and can be trickier to identify and resolve. They often involve threads
+being too cooperative with each other and getting stuck in a loop of trying to avoid conflicts.
