@@ -1,4 +1,4 @@
-package ait.fish.tasks;
+package ait.bank.model;
 
 public class Account {
     int accNumber;

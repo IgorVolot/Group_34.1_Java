@@ -1,4 +1,6 @@
-package ait.fish.tasks;
+package ait.bank.service;
+
+import ait.bank.model.Account;
 
 public class Transfer implements Runnable{
     Account accDonor;
@@ -21,7 +23,7 @@ public class Transfer implements Runnable{
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
+                //  TODO Auto-generated catch block
                 e.printStackTrace();
             }
             synchronized (accTo) {

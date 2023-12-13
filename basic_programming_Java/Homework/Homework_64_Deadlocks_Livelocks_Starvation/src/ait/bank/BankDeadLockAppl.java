@@ -1,4 +1,8 @@
-package ait.fish.tasks;
+package ait.bank;
+
+import ait.bank.model.Account;
+import ait.bank.service.Transfer;
+import ait.bank.service.Transfer1;
 
 public class BankDeadLockAppl {
     public static void main(String[] args) throws InterruptedException {
@@ -6,8 +10,8 @@ public class BankDeadLockAppl {
         Account son = new Account(2000);
         father.credit(1000);
         son.credit(1000);
-        Transfer transfer1 = new Transfer(father, son, 900);
-        Transfer transfer2 = new Transfer(son, father, 900);
+        Transfer1 transfer1 = new Transfer1(father, son, 900);
+        Transfer1 transfer2 = new Transfer1(son, father, 900);
         Thread thread1 = new Thread(transfer1);
         Thread thread2 = new Thread(transfer2);
         thread1.start();
