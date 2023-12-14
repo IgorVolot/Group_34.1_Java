@@ -1,29 +1,22 @@
 package ait.library.model;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Book implements Comparable<Book> {
     private String author;
     private String name;
     private Integer issueYear;
-    private int rating;
-    private int review;
+    private List<Review> reviewList;
 
-    public Book(String author, String name, Integer issueYear, int rating, int review) {
+    public Book(String author, String name, Integer issueYear) {
         this.author = author;
         this.name = name;
         this.issueYear = issueYear;
-        this.rating = rating;
-        this.review = review;
+        this.reviewList = new ArrayList<>();
     }
 
-    public int getRating() {
-        return rating;
-    }
-
-    public int getReview() {
-        return review;
-    }
 
     public String getAuthor() {
         return author;
@@ -37,13 +30,6 @@ public class Book implements Comparable<Book> {
         return issueYear;
     }
 
-    public void setRating(int rating) {
-        this.rating = rating;
-    }
-
-    public void setReview(int review) {
-        this.review = review;
-    }
 
     @Override
     public boolean equals(Object o) {
@@ -71,8 +57,6 @@ public class Book implements Comparable<Book> {
         sb.append("author='").append(author).append('\'');
         sb.append(", name='").append(name).append('\'');
         sb.append(", issueYear=").append(issueYear);
-        sb.append(", rating=").append(rating);
-        sb.append(", review=").append(review);
         sb.append('}');
         return sb.toString();
     }

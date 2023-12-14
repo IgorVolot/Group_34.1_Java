@@ -6,28 +6,47 @@ import java.util.Objects;
 
 public class Reader {
     private String fio;
+    private String email;
+    private boolean subscriber;
     private List<Book> books;
-    private int like;
 
-    public Reader(String fio) {
+    public Reader(String fio, String email, boolean subscriber) {
         this.fio = fio;
+        this.email = email;
+        this.subscriber = subscriber;
         this.books = new ArrayList<>();
+    }
+    public Reader(String fio, String email) {
+        this.fio = fio;
+        this.email = email;
+    }
+
+    public  boolean isSubscriber(){
+        return subscriber;
+    }
+
+    public void setFio(String fio) {
+        this.fio = fio;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setSubscriber(boolean subscriber) {
+        this.subscriber = subscriber;
     }
 
     public String getFio() {
         return fio;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
     public List<Book> getBooks() {
         return books;
-    }
-
-    public int getLike() {
-        return like;
-    }
-
-    public void setLike(int like) {
-        this.like = like;
     }
 
     @Override
@@ -37,20 +56,21 @@ public class Reader {
 
         Reader reader = (Reader) o;
 
-        return Objects.equals(fio, reader.fio);
+        return Objects.equals(email, reader.email);
     }
 
     @Override
     public int hashCode() {
-        return fio != null ? fio.hashCode() : 0;
+        return email != null ? email.hashCode() : 0;
     }
 
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Reader{");
         sb.append("fio='").append(fio).append('\'');
+        sb.append(", email='").append(email).append('\'');
+        sb.append(", subscriber=").append(subscriber);
         sb.append(", books=").append(books);
-        sb.append(", like=").append(like);
         sb.append('}');
         return sb.toString();
     }
