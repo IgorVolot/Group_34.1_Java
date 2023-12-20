@@ -34,4 +34,39 @@ public class MessageSender implements Runnable {
             e.printStackTrace();
         }
     }
+
+//    @Override
+//    public void run() {
+//        try (Socket socket = this.socket) {
+//            PrintWriter socketWriter = new PrintWriter(socket.getOutputStream());
+//            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//            System.out.println("Enter your name");
+//            String name = br.readLine();
+//            if (checkUsername(name)) {
+//                System.out.println("Enter your message or type exit for quit");
+//                String message = br.readLine();
+//
+//                while (!"exit".equalsIgnoreCase(message)) {
+//                    socketWriter.println(name + " [" + LocalTime.now().format(DateTimeFormatter.ofPattern("HH:mm")) + "] " + message);
+//                    socketWriter.flush();
+//                    message = br.readLine();
+//                }
+//            } else {
+//                System.out.println("Wrong input");
+//                System.out.println("Enter your name again");
+//            }
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
+//
+//    private boolean checkUsername(String name) throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        name = br.readLine();
+//        if (!name.equalsIgnoreCase("exit") && !name.trim().isEmpty()) {
+//            return true;
+//        }
+//        return false;
+//    }
+
 }

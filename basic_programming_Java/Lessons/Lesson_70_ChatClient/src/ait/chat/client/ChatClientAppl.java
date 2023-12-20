@@ -9,8 +9,8 @@ import java.net.UnknownHostException;
 
 public class ChatClientAppl {
     public static void main(String[] args) {
-        String serverHost = "5.tcp.eu.ngrok.io";
-        int port = 17250;
+        String serverHost = "127.0.0.1";
+        int port = 9000;
         try {
             Socket socket = new Socket(serverHost, port);
             Thread sender = new Thread(new MessageSender(socket));
