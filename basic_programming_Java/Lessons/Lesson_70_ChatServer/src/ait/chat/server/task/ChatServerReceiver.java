@@ -1,32 +1,32 @@
 package ait.chat.server.task;
 
+import ait.mediation.BlkQueue;
 import ait.mediation.BlkQueueImpl;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.Socket;
+import java.util.HashSet;
+import java.util.Set;
+
 public class ChatServerReceiver implements Runnable {
-    private BlkQueueImpl<String> blkQueue;
+    private BlkQueue<String> messageBox;
     private Socket socket;
 
-    public ChatServerReceiver(BlkQueueImpl<String> blkQueue, Socket socket) {
-        this.blkQueue = blkQueue;
+    public ChatServerReceiver(BlkQueue<String> messageBox, Socket socket) {
+        this.messageBox = messageBox;
         this.socket = socket;
     }
 
     @Override
     public void run() {
         try(Socket socket = this.socket) {
-            InputStream inputStream = socket.getInputStream();
-            BufferedReader socketReader = new BufferedReader(new InputStreamReader(inputStream));
-            String receivedMessage = socketReader.readLine();
+            BufferedReader socketReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             while (true) {
-                if (receivedMessage == null) {
+                String receivedMessage = socketReader.readLine();
+                if (receivedMessage == null){
                     break;
                 }
-                blkQueue.push(receivedMessage);
+                messageBox.push(receivedMessage);
             }
         } catch (IOException e) {
             e.printStackTrace();
