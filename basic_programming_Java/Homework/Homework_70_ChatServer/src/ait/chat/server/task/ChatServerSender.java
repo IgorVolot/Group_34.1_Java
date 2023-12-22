@@ -7,51 +7,38 @@ import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class ChatServerSender implements Runnable {
-    private BlkQueue<String> messageList;
-    private Socket socket;
-    private Set<PrintWriter> userList;
+    private BlkQueue<String> messageBox;
+    private Set<PrintWriter> clients;
 
-    public ChatServerSender(BlkQueue<String> messageList, Socket socket) {
-        this.messageList = messageList;
-        this.socket = socket;
-        this.userList = new HashSet<>();
+    public ChatServerSender(BlkQueue<String> messageBox) {
+        this.messageBox = messageBox;
+        clients = new HashSet<>();
+    }
+
+    public boolean addClient(Socket socket) throws IOException {
+        return clients.add(new PrintWriter(socket.getOutputStream(), true)); // autoFlush
     }
 
     @Override
     public void run() {
-        try (Socket socket = this.socket) {
-            OutputStream outputStream = socket.getOutputStream();
-            PrintWriter socketWriter = new PrintWriter(outputStream);
-            if (socketWriter.equals(null)) {
-                removeUser(socketWriter);
-            } else {
-                addUser(socketWriter);
+        while (true){
+            String message = messageBox.pop();
+            synchronized (this) {
+                Iterator<PrintWriter> iterator = clients.iterator();
+                while (iterator.hasNext()){
+                    PrintWriter clientWriter = iterator.next();
+                    if (clientWriter.checkError()){
+                        iterator.remove();
+                    } else {
+                        clientWriter.println(message); // если есть autoFlush, то здесь flush() уже не нужен
+                    }
+                }
             }
-
-            while (true) {
-                String forwardedMessage = messageList.pop();
-                userList.forEach(message -> message.println(forwardedMessage));
-                socketWriter.flush();
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println(clients.size());
         }
-    }
-
-    private boolean addUser(PrintWriter user) {
-        if (user.equals(null)) {
-            throw new RuntimeException("User cannot be null");
-        }
-        return userList.add(user);
-    }
-
-    private void removeUser(PrintWriter user) {
-        PrintWriter victim = userList.stream()
-                .filter(u -> u.equals(user))
-                .findFirst().get();
-        userList.remove(victim);
     }
 }

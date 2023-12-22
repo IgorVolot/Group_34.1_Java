@@ -1,5 +1,6 @@
 package ait.chat.server.task;
 
+import ait.mediation.BlkQueue;
 import ait.mediation.BlkQueueImpl;
 
 import java.io.*;
@@ -8,27 +9,24 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class ChatServerReceiver implements Runnable {
-    private BlkQueueImpl<String> messageList;
+    private BlkQueue<String> messageBox;
     private Socket socket;
-    private Set<PrintWriter> userList;
 
-    public ChatServerReceiver(BlkQueueImpl<String> messageList, Socket socket) {
-        this.messageList = messageList;
+    public ChatServerReceiver(BlkQueue<String> messageBox, Socket socket) {
+        this.messageBox = messageBox;
         this.socket = socket;
-        this.userList = new HashSet<>();
     }
 
     @Override
     public void run() {
         try (Socket socket = this.socket) {
-            InputStream inputStream = socket.getInputStream();
-            BufferedReader socketReader = new BufferedReader(new InputStreamReader(inputStream));
-            String receivedMessage = socketReader.readLine();
+            BufferedReader socketReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             while (true) {
-                if (receivedMessage == null) {
+                String receivedMessage = socketReader.readLine();
+                if (receivedMessage == null){
                     break;
                 }
-                messageList.push(receivedMessage);
+                messageBox.push(receivedMessage);
             }
         } catch (IOException e) {
             e.printStackTrace();
